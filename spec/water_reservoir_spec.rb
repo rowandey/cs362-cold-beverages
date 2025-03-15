@@ -21,6 +21,7 @@ describe 'A water reservoir' do
   end
 
   it 'can be filled' do
+    expect(@reservoir.current_water_volume).to eq(0)
     @reservoir.fill()
     expect(@reservoir.current_water_volume).to eq(10)
   end
